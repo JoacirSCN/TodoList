@@ -4,7 +4,7 @@ Projeto 1 do Ignite React - Desafio: Praticando Conceitos, é uma aplicação de
   - Marcar e desmarcar uma tarefa como concluída
   - Remover uma tarefa da listagem
   - Mostrar o progresso de conclusão das tarefas
-&nbsp;
+
 ## 🛠️ Technologies
 
 * React + JS
