@@ -18,10 +18,10 @@ export function Header({ onAddTask }: Props) {
   }
 
   function onChangeTitle(event: ChangeEvent<HTMLInputElement>) {
-    console.log(event.target.value);
-
     setTitle(event.target.value);
   }
+
+  const isNewTitleTaskEmpty = title.length === 0;
 
   return (
     <header className={styles.header}>
@@ -30,7 +30,7 @@ export function Header({ onAddTask }: Props) {
       <form className={styles.newTaskForm} onSubmit={handleSubmit} >
         <input placeholder="Adicione uma nova tarefe" onChange={onChangeTitle} value={title} />
 
-        <button>
+        <button type="submit" disabled={isNewTitleTaskEmpty}>
           Criar
           <AiOutlinePlusCircle size={20} />
         </button>
